@@ -1,0 +1,387 @@
+* {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+* {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Outer Sidebar Container */
+.sidebar-container {
+  background-color: rgba(64, 69, 82, 0.75); 
+  padding: 20px;
+  border-radius: 0px;
+}
+
+/* Individual Widget Cards */
+.widget-card {
+  background-color: #383c4a;
+  border-radius: 0px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #7c818c;
+}
+
+/* Text Headers */
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #eff5fa;
+  margin-bottom: 12px;
+}
+
+/* Main Clock Module */
+
+.clock-time {
+  font-size: 36px;
+  font-weight: 800;
+  color: #5294e2;
+}
+
+.clock-date {
+  font-size: 14px;
+  color: #a6adc8;
+}
+
+/* Calendar Module */
+.sidebar-cal {
+  background-color: #404552;
+  color: #eff5fa;
+  font-family: "Inter", sans-serif;
+}
+
+.section-title {
+  color: #5294e2; 
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* This is the native GTK 3 selector for the current/selected day cell */
+.sidebar-cal:selected,
+.sidebar-cal:active {
+  background-color: #5294e2;
+  color: #11111b;
+  border-radius: 4px;
+  padding-bottom: 4px; 
+  padding-top: 2px;
+  margin-top: 2px;
+  
+}
+
+/* If your GTK theme engine uses standard pseudo-states for the text grid */
+.sidebar-cal entry:selected,
+.sidebar-cal label:selected {
+  background-color: #5294e2;
+  color: #11111b;
+}
+
+/* Task Module */
+.task-item {
+  padding: 8px 0px;
+  border-bottom: 1px solid #313244;
+}
+
+.task-name {
+  color: #cdd6f4;
+  font-size: 14px;
+}
+
+.task-due {
+  color: #f38ba8;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.add-task-btn {
+  background: #5294e2;
+  color: #eff5fa;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 0px;
+  border: none;
+}
+
+
+/* Schedule Module */
+.schedule-container {
+  background-color: #383c4a; 
+  border: 1px solid #7c818c; 
+  border-radius: 0px;
+  padding: 14px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.schedule-header {
+  margin-bottom: 14px;
+  border-bottom: 2px solid #313244;
+  padding-bottom: 6px;
+}
+  
+.schedule-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #5294e2;
+  padding-bottom: 6px;
+}
+
+.lesson-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #404552; 
+  border-radius: 0px;
+  margin-bottom: 7px; 
+}
+
+.period-number {
+  color: #5294e2; 
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.subject-name {
+  color: #eff5fa; 
+  font-size: 14px;
+}
+
+
+
+/* Assignment Completion */
+.check-box {
+  font-size: 11px;
+  padding: 2px 6px; 
+  margin-right: 10px;
+  border-radius: 0px;
+  border: 0px;
+}
+
+.check-box.checked {
+  background-color: #a6e3a1;
+  color: #11111b;
+}
+
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #585b70;
+}
+
+.task-due.completed {
+  text-decoration: line-through;
+  color: #585b70;
+}
+
+
+/* Workspace Switcher Module */
+.workspaces-widget {
+  padding: 6px 11px;
+  background-color: #383c4a; 
+  border-radius: 0px;
+  margin-bottom: 102px;
+}
+
+.ws-btn {
+  background-image: none; 
+  background-color: transparent;
+  color: #eff5fa; 
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 6px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: none; 
+  box-shadow: none;
+  text-shadow: none;
+  
+}
+
+.ws-btn:hover {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #5294e2; 
+}
+
+
+.ws-btn.active {
+  background-image: none;
+  background-color: #5294e2; 
+  color: #404552;            
+  box-shadow: none;
+}
+
+/* Power Menu Module */
+
+/* Container padding */
+.powermenu-box {
+  padding: 10px;
+}
+
+/* Container spacing using native margins */
+.powermenu-box button {
+  margin: 0 14px; 
+}
+
+
+.power-btn {
+  background-image: none;
+  background-color: #383c4a; 
+  color: #eff5fa;            
+  font-size: 18px;
+  text-shadow: none;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+
+}
+
+/* Hover highlights */
+.power-btn:hover {
+  background-image: none;
+  background-color: #5294e2; 
+  color: #404552;           
+}
+
+
+.power-btn.shutdown {
+  padding-top: 12px;   
+  padding-bottom: 8.5px;  
+}
+.power-btn.sleep {
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.power-btn.restart {
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+.power-btn.logout {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Resources Module */
+.resources-card {
+  background-color: #383c4a;
+  padding: 14px;
+  margin: 0px;
+  margin-bottom: 20;
+  border: 1px solid #7c818c;
+}
+
+.res-label-title {
+  color: #5294e2; 
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.res-label-val {
+  color: #5294e2; 
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Container for the segments */
+.seg-bar-container {
+  background: transparent;
+}
+
+.seg-block {
+  background-color: #5294e2; 
+  min-height: 12px;
+  border-radius: 2px;
+}
+
+
+.seg-block.active {
+  background-color: #eff5fa; 
+}
+
+/*  Launcher Module */
+.launcher-card {
+  background-color: #383c4a;
+  padding: 12px;
+  margin: 0px;
+  margin-bottom: 20;
+  border: 1px solid #7c818c;
+}
+
+.app-row {
+  background: #404552;
+  border: none;
+  box-shadow: none;
+  padding: 8px 12px;
+  border-radius: 0px;
+  transition: background-color 0.2s ease;
+}
+
+.app-row:hover {
+  background-color: #5294e2;
+}
+
+.app-label {
+  color: #eff5fa; 
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+
+.app-row:hover .app-label {
+  color: #5294e2; 
+}
+.app-icon {
+  margin: 0;
+  padding: 0;
+  
+}
+.app-text-icon {
+  color: #5294e2; 
+  font-size: 18px; 
+  background: transparent; 
+  text-shadow: none;
+}
+
+
+/* Volume and Brightness Module */
+
+.indicator-bar {
+  background-color: #383c4a;
+  border: 1px solid #7c818c;
+  border-radius: 0px;
+  padding: 6px 77px;
+  margin-bottom: 20px;
+}
+
+.indicator-item {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+}
+
+.indicator-text {
+  color: #cdd6f4;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.vol-icon { 
+  color: #5294e2;
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.bright-icon { 
+  color: #f9e2af;
+  font-size: 20px;
+  padding-bottom: 4px;
+}
